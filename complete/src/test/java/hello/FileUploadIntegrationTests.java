@@ -60,6 +60,7 @@ public class FileUploadIntegrationTests {
         assertThat(response.getHeaders().getFirst(HttpHeaders.CONTENT_DISPOSITION))
                 .isEqualTo("attachment; filename=\"testupload.txt\"");
         assertThat(response.getBody()).isEqualTo("Spring Framework");
+        
     }
 
 }
